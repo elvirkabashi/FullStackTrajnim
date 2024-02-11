@@ -9,6 +9,7 @@
 }
 .card{
     width: 40%;
+    min-height: 200px;
 }
 
 ul li{
@@ -20,11 +21,12 @@ i{
 }
 
 @media only screen and (max-width: 768px) {
-    .moile{
+    .mobile{
         display: block !important;
     }
     .card{
         width: 75%;
+        margin-top: 50px;
     }
 }
 
