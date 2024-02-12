@@ -8,7 +8,7 @@
     font-size: 13px;
 }
 .card{
-    width: 40%;
+    width: 30%;
     min-height: 200px;
 }
 
@@ -20,13 +20,26 @@ i{
     font-size: 25px;
 }
 
+.accordion-item:focus-within .accordion-button {
+    box-shadow: none;
+}
+
+.sylabus{
+    max-width: 800px;
+}
+
+@media only screen and (max-width: 993px) {
+
+    .card{
+        width: 55%;
+    }
+}
 @media only screen and (max-width: 768px) {
     .mobile{
-        display: block !important;
+        flex-direction: column;
     }
     .card{
         width: 75%;
-        margin-top: 50px;
     }
 }
 
