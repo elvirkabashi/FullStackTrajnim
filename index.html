@@ -6,11 +6,37 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Trajnim</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/titlelogo.png">
+    <title>Trajnim FullStack</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+      <div class="container-fluid justify-content-between">
+        <a class="navbar-brand" href="#">FullStack</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#benefitet">Benefitet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#syllabusi">Syllabusi</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Info</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
  
-    <section class="container mt-5">
+    <section class="container" id="info" style="margin-top: 100px;">
         <div>
             <h3 class="text-center blue">Bëhu pjesë e trajnimit FullStack</h3>
         </div>
@@ -27,7 +53,7 @@
                 Në fund të kursit, do të jeni në gjendje të kuptoni dhe të ndërtoni aplikacione web të plota FullStack duke përdorur teknologjitë ASP .NET Core Web API dhe React JS. Përgatitu për të shkuar përtej nivelit themelor dhe për të zgjeruar aftësitë tuaja në botën e zhvillimit të aplikacioneve web të avancuara
             </p>
         </div>
-        <div class="m-5">
+        <div class="m-5" id="benefitet">
             <div class="mobile d-flex justify-content-center gap-5">
                 <div class="card">
                     <div class="card-body">
@@ -110,7 +136,7 @@
         </div>
     </section>
 
-    <section class="sylabus container my-5">
+    <section class="sylabus container my-5" id="syllabusi">
         <b>Syllabusi</b>
         <h4 class="blue">Planprogrami i zgjeruar i trajnimit</h4>
         <p style="font-size: 13px;">Në vijim gjeni planprogramin e zgjeruar të trajnimit.</p>
@@ -127,20 +153,20 @@
                         <li>Krijimi i repositorit të GitHub</li>
                         <li>Git & Visual Studio Code</li>
                         <li>Përgatitja e ambientit të punës (Visual Studio)</li>
-                        <li>Lidhja me MSSQL (Connection String)</li>
                         <li>Testimi i Api default me Swagger UI</li>
+                        <li>Lidhja me MSSQL (Connection String)</li>
                         <li>Instalimi i paketës Entity Framework</li>
-                        <li>Krijimi i modelit të parë</li>
                         <li>Krijimi i kontekstit të bazës së të dhënave dhe konfigurimi i Entity Framework për lidhjen me databazën</li>
+                        <li>Krijimi i modelit të parë</li>
                         <li>Shtimi i `DbSet` për secilën tabelë në modelin e databazës përkatëse</li>
                         <li>Migrimi i modelit dhe shfaqja në bazën e të dhënave</li>
                         <li>Controller-i dhe Action Metodat për Operacionin CRUD</li>
                         <li>Linjat (routes)</li>
                         <li>Testimi i CRUD në API me Swagger UI ose Postman</li>
-                        <li>Krijimi i modelit në relacion 1:M</li>
+                        <!-- <li>Krijimi i modelit në relacion 1:M</li>
                         <li>Controller-i dhe Action Metodat për relacionin 1:M</li>
                         <li>Krijimi i modelit në relacion M:M</li>
-                        <li>Controller-i dhe Action Metodat për relacionin M:M</li>
+                        <li>Controller-i dhe Action Metodat për relacionin M:M</li> -->
                     </ul>
                 </div>
               </div>
@@ -154,11 +180,20 @@
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <ul>
-                    <li>Coming Soon</li>
-                    <li>Coming Soon</li>
-                    <li>Coming Soon</li>
-                    <li>Coming Soon</li>
-                    <li>Coming Soon</li>
+                    <li>Përgatitja e ambientit të punës</li>
+                    <li>Si krijohet një projekt</li>
+                    <li>Komponentat</li>
+                    <li>JSX</li>
+                    <li>React props</li>
+                    <li>Destrukturimi i vetive (destructuring props object)</li>
+                    <li>Validimi i vetive të komponenteve</li>
+                    <li>Renderimi me kusht (conditional rendering)</li>
+                    <li>Eventet</li>
+                    <li>Menaxhimi i gjendjes (State Managment)</li>
+                    <li>Dërgimi i gjendjes dhe funksioneve tek komponentet fëmijë përmes props</li>
+                    <li>Linjat (routes) / React router</li>
+                    <li>UseEffect</li>
+                    <li>Konsumimi i APIs (axios)</li>
                   </ul>
                 </div>
               </div>
@@ -182,6 +217,24 @@
               </div>
             </div>
             <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Authentication & Authorization
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Coming Soon</li>
+                    <li>Coming Soon</li>
+                    <li>Coming Soon</li>
+                    <li>Coming Soon</li>
+                    <li>Coming Soon</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                     Bonus
@@ -190,17 +243,14 @@
                 <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <ul>
-                      <li>Coming Soon</li>
-                      <li>Coming Soon</li>
-                      <li>Coming Soon</li>
-                      <li>Coming Soon</li>
-                      <li>Coming Soon</li>
+                      <li>Ndihmë gjate idesë dhe zhvillimit te projektit LAB1</li>
                     </ul>
                   </div>
                 </div>
             </div>
           </div>
     </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
