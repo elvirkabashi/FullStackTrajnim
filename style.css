@@ -7,9 +7,9 @@ nav{
 }
 
 nav .nav-link{
-    font-size: 15px;
-    font-weight: 600;
-    color: black;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: black !important;
 }
 
 nav .nav-item a:hover{
